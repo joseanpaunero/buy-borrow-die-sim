@@ -15,7 +15,6 @@ import numpy as np
 import yfinance as yf
 from pathlib import Path
 from datetime import datetime
-import pandas_datareader.data as web
 
 # Ruta del CSV cacheado
 DATA_DIR = Path(__file__).parent
