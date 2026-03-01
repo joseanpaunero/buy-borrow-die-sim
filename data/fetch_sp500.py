@@ -128,13 +128,17 @@ def fetch_fresh_data(start: str = "1871-01-01", end: str = None) -> pd.DataFrame
         # --- OBTENER INFLACION (CPI) ---
         print("   📥 Fusionando CPI Histórico y calculando Inflación...")
         try:
-            # Descargamos CPIAUCNS desde 1913 para rellenar la cola en caso de que Shiller no esté a la última
-            cpi_df = web.DataReader('CPIAUCNS', 'fred', '1913-01-01', datetime.today().strftime('%Y-%m-%d'))
-            cpi_df = cpi_df.resample('MS').first() # Alinear al inicio de mes
+            # Descargamos CPIAUCNS desde 1913 nativamente leyendo el CSV público de FRED
+            cpi_url = "https://fred.stlouisfed.org/graph/fredgraph.csv?id=CPIAUCNS"
+            cpi_df = pd.read_csv(cpi_url, parse_dates=['DATE'])
+            cpi_df = cpi_df.rename(columns={'DATE': 'Date', 'CPIAUCNS': 'CPIAUCNS_raw'})
+            cpi_df['CPIAUCNS'] = pd.to_numeric(cpi_df['CPIAUCNS_raw'], errors='coerce')
+            
+            cpi_df = cpi_df.set_index('Date').resample('MS').first() # Alinear al inicio de mes
             cpi_df.index.name = 'Date'
             cpi_df = cpi_df.reset_index()
             
-            df = pd.merge(df, cpi_df, on='Date', how='left')
+            df = pd.merge(df, cpi_df[['Date', 'CPIAUCNS']], on='Date', how='left')
             
             # Combinar el CPI de Shiller con el FRED (para la cola final)
             df['CPI_Combined'] = df['CPI'].fillna(df['CPIAUCNS'])
