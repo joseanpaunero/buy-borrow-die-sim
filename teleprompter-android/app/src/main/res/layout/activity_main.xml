@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textAppearance="?attr/textAppearanceHeadlineSmall" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/subtitle"
+            android:textAppearance="?attr/textAppearanceBodyMedium"
+            android:textColor="?android:attr/textColorSecondary" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/hint_script">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editScript"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|start"
+                android:inputType="textMultiLine|textCapSentences"
+                android:minLines="7"
+                android:maxLines="14"
+                android:scrollbars="vertical" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/btn_overlay"
+            app:icon="@drawable/ic_overlay" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnStop"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_stop"
+            android:visibility="gone"
+            app:icon="@drawable/ic_close" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnFullscreen"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_fullscreen"
+            app:icon="@drawable/ic_fullscreen" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="16dp"
+            app:contentPadding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tip_title"
+                    android:textAppearance="?attr/textAppearanceTitleMedium" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:lineSpacingMultiplier="1.15"
+                    android:text="@string/tip_body"
+                    android:textAppearance="?attr/textAppearanceBodyMedium" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="16dp"
+            app:contentPadding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_title"
+                    android:textAppearance="?attr/textAppearanceTitleMedium" />
+
+                <TextView
+                    android:id="@+id/labelTextSize"
+                    style="@style/SettingLabel" />
+
+                <com.google.android.material.slider.Slider
+                    android:id="@+id/sliderTextSize"
+                    style="@style/SettingSlider"
+                    android:stepSize="1"
+                    android:valueFrom="14"
+                    android:valueTo="60" />
+
+                <TextView
+                    android:id="@+id/labelSpeed"
+                    style="@style/SettingLabel" />
+
+                <com.google.android.material.slider.Slider
+                    android:id="@+id/sliderSpeed"
+                    style="@style/SettingSlider"
+                    android:stepSize="5"
+                    android:valueFrom="10"
+                    android:valueTo="150" />
+
+                <TextView
+                    android:id="@+id/labelWidth"
+                    style="@style/SettingLabel" />
+
+                <com.google.android.material.slider.Slider
+                    android:id="@+id/sliderWidth"
+                    style="@style/SettingSlider"
+                    android:stepSize="5"
+                    android:valueFrom="45"
+                    android:valueTo="100" />
+
+                <TextView
+                    android:id="@+id/labelLines"
+                    style="@style/SettingLabel" />
+
+                <com.google.android.material.slider.Slider
+                    android:id="@+id/sliderLines"
+                    style="@style/SettingSlider"
+                    android:stepSize="1"
+                    android:valueFrom="1"
+                    android:valueTo="8" />
+
+                <TextView
+                    android:id="@+id/labelAlpha"
+                    style="@style/SettingLabel" />
+
+                <com.google.android.material.slider.Slider
+                    android:id="@+id/sliderAlpha"
+                    style="@style/SettingSlider"
+                    android:stepSize="10"
+                    android:valueFrom="0"
+                    android:valueTo="100" />
+
+                <TextView
+                    android:id="@+id/labelFsSize"
+                    style="@style/SettingLabel" />
+
+                <com.google.android.material.slider.Slider
+                    android:id="@+id/sliderFsSize"
+                    style="@style/SettingSlider"
+                    android:stepSize="2"
+                    android:valueFrom="24"
+                    android:valueTo="80" />
+
+                <com.google.android.material.materialswitch.MaterialSwitch
+                    android:id="@+id/switchCountdown"
+                    style="@style/SettingSwitch"
+                    android:text="@string/switch_countdown" />
+
+                <com.google.android.material.materialswitch.MaterialSwitch
+                    android:id="@+id/switchMarker"
+                    style="@style/SettingSwitch"
+                    android:text="@string/switch_marker" />
+
+                <com.google.android.material.materialswitch.MaterialSwitch
+                    android:id="@+id/switchMirror"
+                    style="@style/SettingSwitch"
+                    android:text="@string/switch_mirror" />
+
+                <com.google.android.material.materialswitch.MaterialSwitch
+                    android:id="@+id/switchOpenCamera"
+                    style="@style/SettingSwitch"
+                    android:text="@string/switch_open_camera" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</ScrollView>

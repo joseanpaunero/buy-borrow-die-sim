@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/overlayRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.paunero.teleprompter.PrompterView
+        android:id="@+id/prompter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="14dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="2dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp">
+
+        <ImageButton
+            android:id="@+id/btnDrag"
+            style="@style/OverlayControl"
+            android:contentDescription="@string/action_drag"
+            android:src="@drawable/ic_drag" />
+
+        <ImageButton
+            android:id="@+id/btnRestart"
+            style="@style/OverlayControl"
+            android:contentDescription="@string/action_restart"
+            android:src="@drawable/ic_restart" />
+
+        <ImageButton
+            android:id="@+id/btnPlay"
+            style="@style/OverlayControl"
+            android:contentDescription="@string/action_play"
+            android:src="@drawable/ic_play" />
+
+        <ImageButton
+            android:id="@+id/btnSlower"
+            style="@style/OverlayControl"
+            android:contentDescription="@string/action_slower"
+            android:src="@drawable/ic_minus" />
+
+        <ImageButton
+            android:id="@+id/btnFaster"
+            style="@style/OverlayControl"
+            android:contentDescription="@string/action_faster"
+            android:src="@drawable/ic_plus" />
+
+        <ImageButton
+            android:id="@+id/btnClose"
+            style="@style/OverlayControl"
+            android:contentDescription="@string/action_close"
+            android:src="@drawable/ic_close" />
+    </LinearLayout>
+</LinearLayout>

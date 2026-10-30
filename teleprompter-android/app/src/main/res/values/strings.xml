@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Prompter Discreto</string>
+    <string name="subtitle">Teleprompter que flota junto a la cámara frontal para que no se note que lees.</string>
+    <string name="hint_script">Pega aquí el texto que vas a leer…</string>
+
+    <string name="btn_overlay">Activar flotante sobre la cámara</string>
+    <string name="btn_overlay_update">Aplicar cambios al flotante</string>
+    <string name="btn_stop">Cerrar flotante</string>
+    <string name="btn_fullscreen">Modo pantalla completa</string>
+
+    <string name="settings_title">Ajustes</string>
+    <string name="label_text_size">Tamaño de letra del flotante: %1$d sp</string>
+    <string name="label_speed">Velocidad: %1$d</string>
+    <string name="label_width">Ancho del recuadro: %1$d %%</string>
+    <string name="label_lines">Líneas visibles: %1$d</string>
+    <string name="label_alpha">Opacidad del fondo: %1$d %%</string>
+    <string name="label_fs_size">Tamaño de letra en pantalla completa: %1$d sp</string>
+    <string name="switch_countdown">Cuenta atrás de 3 s al iniciar</string>
+    <string name="switch_marker">Marcador en la línea de lectura</string>
+    <string name="switch_mirror">Espejo (para cristal de teleprompter)</string>
+    <string name="switch_open_camera">Abrir la cámara al activar el flotante</string>
+
+    <string name="tip_title">Para que no se note que lees</string>
+    <string name="tip_body">• Arrastra el recuadro con el icono ⋮⋮ hasta pegarlo al agujero de la cámara frontal.\n• Cuanto más estrecho y con menos líneas, menos se mueve la mirada: 2 o 3 líneas van bien.\n• Letra pequeña y velocidad constante: los ojos apenas se desplazan.\n• Aléjate un poco del móvil; a más distancia, menos se nota el ángulo.\n• Toca el texto para pausar o reanudar y arrástralo para moverte por el guion.</string>
+
+    <string name="overlay_perm_title">Permiso para mostrar sobre otras apps</string>
+    <string name="overlay_perm_msg">Para ver el guion encima de la app de cámara, Android necesita que actives «Mostrar sobre otras aplicaciones» para Prompter Discreto.</string>
+    <string name="open_settings">Abrir ajustes</string>
+
+    <string name="notif_channel">Teleprompter flotante</string>
+    <string name="notif_title">Prompter Discreto activo</string>
+    <string name="notif_text">El guion flota sobre la cámara. Toca el texto para pausar.</string>
+
+    <string name="action_play">Reproducir</string>
+    <string name="action_pause">Pausar</string>
+    <string name="action_close">Cerrar</string>
+    <string name="action_restart">Volver al inicio</string>
+    <string name="action_slower">Más lento</string>
+    <string name="action_faster">Más rápido</string>
+    <string name="action_drag">Mover</string>
+    <string name="action_mirror">Espejo</string>
+
+    <string name="toast_overlay_started">Flotante activado. Abre la cámara y graba.</string>
+    <string name="toast_speed">Velocidad: %1$d</string>
+    <string name="camera_not_found">No se encontró ninguna app de cámara.</string>
+    <string name="overlay_failed">No se pudo mostrar el flotante. Revisa el permiso «Mostrar sobre otras aplicaciones».</string>
+    <string name="empty_script_placeholder">Escribe tu guion en Prompter Discreto y vuelve aquí.</string>
+
+    <string name="sample_script">Hola, bienvenido a este vídeo. Hoy te voy a contar, en menos de dos minutos, por qué esta idea puede cambiar tu forma de ver las finanzas.\n\nLo primero: no necesitas ser un experto. Solo necesitas entender tres conceptos sencillos que te explico ahora mismo.\n\nEl primero es el tiempo. El segundo, la constancia. Y el tercero, el que casi nadie aplica, es la paciencia.\n\nQuédate hasta el final, porque al terminar te dejo un ejemplo real con números.</string>
+</resources>

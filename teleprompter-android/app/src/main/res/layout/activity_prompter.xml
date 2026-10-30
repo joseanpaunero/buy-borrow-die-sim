@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <com.paunero.teleprompter.PrompterView
+        android:id="@+id/prompter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="28dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="32dp"
+        android:paddingBottom="88dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/bg_controls"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+
+        <ImageButton
+            android:id="@+id/btnRestart"
+            style="@style/FullscreenControl"
+            android:contentDescription="@string/action_restart"
+            android:src="@drawable/ic_restart" />
+
+        <ImageButton
+            android:id="@+id/btnPlay"
+            style="@style/FullscreenControl"
+            android:contentDescription="@string/action_play"
+            android:src="@drawable/ic_play" />
+
+        <ImageButton
+            android:id="@+id/btnSlower"
+            style="@style/FullscreenControl"
+            android:contentDescription="@string/action_slower"
+            android:src="@drawable/ic_minus" />
+
+        <TextView
+            android:id="@+id/labelSpeed"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/btnFaster"
+            style="@style/FullscreenControl"
+            android:contentDescription="@string/action_faster"
+            android:src="@drawable/ic_plus" />
+
+        <ImageButton
+            android:id="@+id/btnMirror"
+            style="@style/FullscreenControl"
+            android:contentDescription="@string/action_mirror"
+            android:src="@drawable/ic_flip" />
+
+        <ImageButton
+            android:id="@+id/btnClose"
+            style="@style/FullscreenControl"
+            android:contentDescription="@string/action_close"
+            android:src="@drawable/ic_close" />
+    </LinearLayout>
+</FrameLayout>

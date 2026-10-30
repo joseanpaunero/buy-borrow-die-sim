@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Discreet Prompter</string>
+    <string name="subtitle">A teleprompter that floats next to the front camera so nobody notices you are reading.</string>
+    <string name="hint_script">Paste the text you are going to read…</string>
+
+    <string name="btn_overlay">Float over the camera</string>
+    <string name="btn_overlay_update">Apply changes to the overlay</string>
+    <string name="btn_stop">Close overlay</string>
+    <string name="btn_fullscreen">Full-screen mode</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="label_text_size">Overlay text size: %1$d sp</string>
+    <string name="label_speed">Speed: %1$d</string>
+    <string name="label_width">Box width: %1$d %%</string>
+    <string name="label_lines">Visible lines: %1$d</string>
+    <string name="label_alpha">Background opacity: %1$d %%</string>
+    <string name="label_fs_size">Full-screen text size: %1$d sp</string>
+    <string name="switch_countdown">3-second countdown before starting</string>
+    <string name="switch_marker">Marker on the reading line</string>
+    <string name="switch_mirror">Mirror (for teleprompter glass)</string>
+    <string name="switch_open_camera">Open the camera when the overlay starts</string>
+
+    <string name="tip_title">So nobody notices you are reading</string>
+    <string name="tip_body">• Drag the box with the ⋮⋮ icon until it sits right next to the front camera hole.\n• The narrower the box and the fewer the lines, the less your eyes move: 2 or 3 lines work well.\n• Small text and a steady speed keep your eyes almost still.\n• Step back a little from the phone; the farther away, the less the angle shows.\n• Tap the text to pause or resume, and drag it to move through the script.</string>
+
+    <string name="overlay_perm_title">Permission to draw over other apps</string>
+    <string name="overlay_perm_msg">To show the script on top of the camera app, Android needs you to enable “Display over other apps” for Discreet Prompter.</string>
+    <string name="open_settings">Open settings</string>
+
+    <string name="notif_channel">Floating teleprompter</string>
+    <string name="notif_title">Discreet Prompter is running</string>
+    <string name="notif_text">The script floats over the camera. Tap the text to pause.</string>
+
+    <string name="action_play">Play</string>
+    <string name="action_pause">Pause</string>
+    <string name="action_close">Close</string>
+    <string name="action_restart">Back to start</string>
+    <string name="action_slower">Slower</string>
+    <string name="action_faster">Faster</string>
+    <string name="action_drag">Move</string>
+    <string name="action_mirror">Mirror</string>
+
+    <string name="toast_overlay_started">Overlay on. Open the camera and record.</string>
+    <string name="toast_speed">Speed: %1$d</string>
+    <string name="camera_not_found">No camera app was found.</string>
+    <string name="overlay_failed">Could not show the overlay. Check the “Display over other apps” permission.</string>
+    <string name="empty_script_placeholder">Write your script in Discreet Prompter and come back here.</string>
+
+    <string name="sample_script">Hi, and welcome to this video. In under two minutes I am going to tell you why this idea can change the way you look at your finances.\n\nFirst of all: you do not need to be an expert. You only need three simple concepts, and I will explain them right now.\n\nThe first one is time. The second is consistency. And the third, the one almost nobody applies, is patience.\n\nStay until the end, because I will leave you a real example with numbers.</string>
+</resources>
